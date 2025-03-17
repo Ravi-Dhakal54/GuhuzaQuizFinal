@@ -1,0 +1,258 @@
+
+/* Floating animation for mascot */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Mascot image styling with floating animation */
+.mascot img {
+    width: 200px;
+    height: auto;
+    animation: float 3s infinite ease-in-out;
+}
+
+/* Faster floating animation on hover */
+.mascot:hover img {
+    animation: float 1s infinite ease-in-out;
+}
+
+/* Popup styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup content styling */
+.popup-content {
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border: 2px solid #000000;
+}
+
+/* Popup heading styling */
+.popup-content h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Popup body styling */
+.popup-body {
+    display: flex;
+    align-items: center;
+}
+
+/* Mascot styling inside popup */
+.mascot {
+    flex: 1;
+    text-align: right;
+    order: 2;
+}
+
+/* Rules text styling */
+.rules-text {
+    flex: 2;
+    padding-right: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+/* Rules heading styling */
+.rules-text h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: #000000;
+    font-weight: 600;
+}
+
+/* Rules paragraph styling */
+.rules-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Rules list styling */
+.rules-text ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Rules list item styling */
+.rules-text ul li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-weight: 400;
+}
+
+/* Custom bullet points for rules list */
+.rules-text ul li::before {
+    content: "•";
+    color: #000000;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Button styling inside popup */
+.button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+/* Button active effect */
+.button:active {
+    transform: translateY(0);
+}
+
+/* Logout popup styling */
+.logout-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Logout popup content styling */
+.logout-popup-content {
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border: 2px solid #000000;
+}
+
+/* Logout popup heading styling */
+.logout-popup-content h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Logout popup body styling */
+.logout-popup-body {
+    display: flex;
+    align-items: center;
+}
+
+/* Logout mascot styling */
+.logout-mascot {
+    flex: 1;
+    text-align: left;
+    order: 1;
+}
+
+/* Logout text styling */
+.logout-text {
+    flex: 2;
+    padding-left: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+/* Logout paragraph styling */
+.logout-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Logout buttons container styling */
+.logout-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+/* Logout button styling */
+.logout-buttons .button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Logout button hover effect */
+.logout-buttons .button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+/* Logout button active effect */
+.logout-buttons .button:active {
+    transform: translateY(0);
+}
+
+/* Cancel button styling */
+.logout-buttons .button.cancel {
+    background-color: #e0e0e0;
+    color: #000000;
+}
+
+/* Cancel button hover effect */
+.logout-buttons .button.cancel:hover {
+    background-color: #b0b0b0;
+}
